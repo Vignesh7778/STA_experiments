@@ -1,0 +1,17 @@
+7. Automate the testing of e-commerce using Selenium
+
+8. Integrate TestNG with the above Test Automation
+
+9. Build Data-driven Framework using Selenium and TestNG
+
+10. Build a Page Object Model using Selenium and TestNG
+
+11. Build BDD Framework with Selenium, TestNG and Cucumber
+
+12. Automate Navigation Between Multiple Web Pages using Selenium
+
+13. Write a Selenium Script to Open the Spotify Web Player
+
+14. Automate Searching for a Product on Amazon using Python
+
+15. Automate the Testing of the Anna University Website
