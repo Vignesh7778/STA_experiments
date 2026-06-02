@@ -1,6 +1,6 @@
-package prg11;
+package com.test.selenium_test_04;
 
-public package com.test;
+import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -14,22 +14,22 @@ public class StepDefinition {
 
     WebDriver driver;
 
-    @Given("User opens Amazon")
-    public void openAmazon() {
+    @Given("User opens Google")
+    public void openGoogle() {
 
         driver = new ChromeDriver();
 
-        driver.get("https://www.amazon.in");
+        driver.manage().timeouts()
+              .implicitlyWait(Duration.ofSeconds(10));
+
+        driver.get("https://www.google.com");
     }
 
     @When("User searches Laptop")
     public void searchLaptop() {
 
-        driver.findElement(By.id("twotabsearchtextbox"))
+        driver.findElement(By.name("q"))
               .sendKeys("Laptop");
-
-        driver.findElement(By.id("nav-search-submit-button"))
-              .click();
     }
 
     @Then("Search is successful")
@@ -39,4 +39,4 @@ public class StepDefinition {
 
         driver.quit();
     }
-} 
+}
